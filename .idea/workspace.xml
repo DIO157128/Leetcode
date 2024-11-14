@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc6f2b1-761c-446c-8ee5-4160aada4298" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1297/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/139/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1423/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1456/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1456/src/Solutionbetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/146/src/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1461/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2090/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2841/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3090/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/643/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/647/src/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/148/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/148/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/125/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1471/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1577/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2105/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/658/src/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/948/src/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/438/out/production/438/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/438/out/production/438/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/438/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/438/src/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2o2u7dq9wJRIShfiRNSi3HXpkds" />
   <component name="ProjectViewState">
@@ -35,12 +33,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="9dc6f2b1-761c-446c-8ee5-4160aada4298" name="Changes" comment="" />
       <created>1730079829520</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730079829520</updated>
       <workItem from="1730079829888" duration="3000" />
+      <workItem from="1731533471548" duration="80000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -4,33 +4,47 @@ import java.util.List;
 import java.util.Map;
 
 class Solution {
-    public List<Integer> findAnagrams(String s, String p) {
+    public List<Integer> fixedFindAnagrams(String s, String p) {
         List<Integer> ans = new ArrayList<>();
         Map<Character,Integer> mapP = new HashMap<>();
         Map<Character,Integer>mapS = new HashMap<>();
-        int left = 0;
         char[]cs = s.toCharArray();
         char[]cp = p.toCharArray();
         for(int right = 0;right<cp.length;right++){
             mapP.merge(cp[right],1,Integer::sum);
         }
-        for(int right = 0;right<cs.length;right++){
-            mapS.merge(cs[right],1,Integer::sum);
-            while(mapS.get(cs[right])>mapP.get(cs[right])){
-                if(mapS.get(cs[left])==1) mapS.remove(cs[left]);
-                else mapS.merge(cs[left],-1,Integer::sum);
-                left++;
+        int k = cp.length;
+        for(int i = 0;i <cs.length;i++){
+            mapS.merge(cs[i],1,Integer::sum);
+            if(i<k-1){
+                continue;
             }
-            if (right -left+1 == cp.length){
+            if(mapS.equals(mapP)){
+                ans.add(i-k+1);
+            }
+            if(mapS.get(cs[i-k+1])==1) mapS.remove(cs[i-k+1]);
+            else mapS.merge(cs[i-k+1],-1,Integer::sum);
+        }
+        return ans;
+    }
+    public List<Integer> unfixedFindAnagrams(String s, String p) {
+        List<Integer> ans = new ArrayList<>();
+        int []cnt = new int[128];
+        int left = 0;
+        char[]cs = s.toCharArray();
+        char[]cp = p.toCharArray();
+        for(int right = 0;right<cp.length;right++){
+            cnt[cp[right]]++;
+        }
+        for(int right = 0;right<cs.length;right++){
+            cnt[cs[right]]--;
+            while(cnt[cs[right]]<0){
+                cnt[cs[left++]]++;
+            }
+            if(right-left+1==cp.length){
                 ans.add(left);
             }
         }
         return ans;
-    }
-
-    public static void main(String[] args) {
-        String s = "cbaebabacd";
-        String p = "abc";
-        System.out.println(new Solution().findAnagrams(s,p));
     }
 }
